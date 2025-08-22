@@ -8,7 +8,7 @@ import {
   StyleSheet,
   Text,
   TouchableOpacity,
-  View,
+  View
 } from "react-native";
 import "react-native-reanimated";
 import { RootStackParamList } from "../types/Navigations";
@@ -63,7 +63,9 @@ export default function ButtonGrid() {
               text={button.text}
               color={button.color}
               visible={button.visible}
-              onPress={() => navigation.navigate(button.route)}
+              onPress={() => {
+                navigation.navigate(button.route);
+              }}
             />
           ))}
         </View>

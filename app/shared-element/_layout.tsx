@@ -1,15 +1,24 @@
-import { Stack } from "expo-router";
+import { RootStackParamList } from '@/types/NavigationShareElement';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from "react";
+import ImageDetails from './ImageDetails';
+import ImageGallery from './ImageGallery';
+
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function SharedElementLayout() {
+  {/*return <GalleryWithDetails />;*/}
+  
   return (
-    <Stack
+    <Stack.Navigator
+      initialRouteName="ImageGallery" // 👈 đảm bảo Gallery luôn là screen gốc
       screenOptions={{
         headerShown: false,
-        // Dùng transparent background để không bị nhảy màu khi chuyển cảnh
-        presentation: "transparentModal",
-        animation: "fade",
+        animation: 'fade', // cần để sharedTransition hoạt động
       }}
-    />
+    >
+      <Stack.Screen name="ImageGallery" component={ImageGallery} />
+      <Stack.Screen name="ImageDetails" component={ImageDetails} />
+    </Stack.Navigator>
   );
 }

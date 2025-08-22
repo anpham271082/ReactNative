@@ -8,18 +8,14 @@ export default function RootLayout() {
     <GestureHandlerRootView style={{ flex: 1 }}>
       <StatusBar hidden />
       <Stack>
-        {/* Màn hình khởi đầu là ButtonGrid */}
         <Stack.Screen
           name="index"
           options={{ headerShown: false }}
         />
-
-        {/* Thêm screen trỏ tới tab layout */}
         <Stack.Screen
           name="(movie_tabs)"
           options={{ headerShown: false }}
         />
-
         <Stack.Screen
           name="movie/[IdMovie]"
           options={{ headerShown: false }}
@@ -28,29 +24,3 @@ export default function RootLayout() {
     </GestureHandlerRootView>
   );
 }
-
-
-{/*export default function RootLayout() {
-  return (
-    <>
-      <StatusBar hidden={true} />
-
-      <Stack>
-        <Stack.Screen
-          name="(movie_tabs)"
-          options={{
-            headerShown: false,
-          }}
-        />
-        <Stack.Screen
-          name="movie/[IdMovie]"
-          options={{
-            headerShown: false,
-          }}
-        />
-      </Stack>
-    </>
-    
-  );
-}*/}
-
