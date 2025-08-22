@@ -27,7 +27,7 @@ const buttonList: {
   { text: "Room MVVM", color: "#607D8B", route: "ExampleRoomMVVM", visible: true },
   { text: "Slide Image", color: "#607D8B", route: "ExampleSlideImage", visible: true },
   { text: "Swipe Card", color: "#9C27B0", route: "ExampleSwipeCard", visible: true },
-  { text: "Login Register", color: "#9C27B0", route: "ExampleLoginRegister", visible: true },
+  { text: "Image Gallery", color: "#9C27B0", route: "ImageGallery", visible: true },
   { text: "Shared Element", color: "#FFC107", route: "shared-element", visible: true },
   { text: "Card Flip", color: "#FFC107", route: "CardFlip", visible: true },
   { text: "Fragmented Image", color: "#003088", route: "FragmentedImageScreen", visible: true },

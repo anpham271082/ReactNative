@@ -7,7 +7,7 @@ export type RootStackParamList = {
   ExampleLoginRegister: undefined;
   ExampleMenu3: undefined;
   "shared-element": undefined;
-  SharedElementDetailScreen: undefined;
+  ImageGallery: undefined;
   CardFlip: undefined;
   FragmentedImageScreen: undefined;
   LoginScreen: undefined;
