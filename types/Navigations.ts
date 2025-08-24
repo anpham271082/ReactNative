@@ -1,12 +1,6 @@
 export type RootStackParamList = {
-  ExampleMVVM3: undefined;
-  ExampleHiltMVVM: undefined;
-  ExampleRoomMVVM: undefined;
-  ExampleSlideImage: undefined;
-  ExampleSwipeCard: undefined;
-  ExampleLoginRegister: undefined;
-  ExampleMenu3: undefined;
-  "shared-element": undefined;
+  "(movie_tabs)": undefined;
+  "(food)": undefined;
   ImageGallery: undefined;
   CardFlip: undefined;
   FragmentedImageScreen: undefined;
@@ -14,5 +8,6 @@ export type RootStackParamList = {
   RegisterScreen: undefined;
   SwipeCard: undefined;
   SlideImage: undefined;
-  "(movie_tabs)": undefined;
+  QRCodeSimple: undefined;
+
 };

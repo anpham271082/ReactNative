@@ -22,32 +22,24 @@ const buttonList: {
   route: ButtonRoute;
   visible: boolean;
 }[] = [
-  { text: "MVVM", color: "#2196F3", route: "ExampleMVVM3", visible: true },
-  { text: "Hilt MVVM", color: "#2196F3", route: "ExampleHiltMVVM", visible: true },
-  { text: "Room MVVM", color: "#607D8B", route: "ExampleRoomMVVM", visible: true },
-  { text: "Slide Image", color: "#607D8B", route: "ExampleSlideImage", visible: true },
-  { text: "Swipe Card", color: "#9C27B0", route: "ExampleSwipeCard", visible: true },
+  { text: "Movie", color: "#2196F3", route: "(movie_tabs)", visible: true },
+  { text: "Food", color: "#2196F3", route: "(food)", visible: true },
   { text: "Image Gallery", color: "#9C27B0", route: "ImageGallery", visible: true },
-  { text: "Shared Element", color: "#FFC107", route: "shared-element", visible: true },
   { text: "Card Flip", color: "#FFC107", route: "CardFlip", visible: true },
   { text: "Fragmented Image", color: "#003088", route: "FragmentedImageScreen", visible: true },
   { text: "Login Register", color: "#003088", route: "LoginScreen", visible: true },
   { text: "Swipe Card", color: "#880088", route: "SwipeCard", visible: true },
   { text: "Slide Image", color: "#880088", route: "SlideImage", visible: true },
-  { text: "Movie", color: "#2196F3", route: "(movie_tabs)", visible: true },
+  { text: "QRCode", color: "#2196F3", route: "QRCodeSimple", visible: true },
 ];
-
-// Lấy chiều rộng màn hình
 const SCREEN_WIDTH = Dimensions.get("window").width;
 const CONTAINER_PADDING = 24;
-const BUTTON_SPACING = 16; // khoảng cách giữa 2 button
+const BUTTON_SPACING = 16; 
 const BUTTON_WIDTH = (SCREEN_WIDTH - CONTAINER_PADDING * 2 - BUTTON_SPACING) / 2;
 
-// 3️⃣ Component chính ButtonGrid
 export default function ButtonGrid() {
   const navigation = useNavigation<NavigationProp<RootStackParamList>>();
 
-  // Chia đôi thành rows 2 button/row
   const rows = [];
   for (let i = 0; i < buttonList.length; i += 2) {
     rows.push(buttonList.slice(i, i + 2));

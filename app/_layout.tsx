@@ -20,6 +20,14 @@ export default function RootLayout() {
           name="movie/[IdMovie]"
           options={{ headerShown: false }}
         />
+        <Stack.Screen
+          name="ImageGallery"
+          options={{ headerShown: true }}
+        />
+        <Stack.Screen
+          name="ImageDetails/[id]"
+          options={{ headerShown: true }}
+        />
       </Stack>
     </GestureHandlerRootView>
   );
