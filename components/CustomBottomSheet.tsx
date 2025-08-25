@@ -1,4 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
+import { Link } from 'expo-router';
 import React, { useEffect, useRef, useState } from 'react';
 import {
     Animated,
@@ -85,13 +86,15 @@ const CustomBottomSheet = ({ visible, onClose }: { visible: boolean; onClose: ()
         </View>
 
         <Text style={styles.subheader}>Your Location</Text>
-        <TouchableOpacity>
-          <View style={styles.item}>
-            <Ionicons name="location-outline" size={20} color={Colors.medium} />
-            <Text style={{ flex: 1 }}>Current location</Text>
-            <Ionicons name="chevron-forward" size={20} color={Colors.primary} />
-          </View>
-        </TouchableOpacity>
+        <Link href={'/(food)/food-location-search'} asChild onPress={onClose}>
+            <TouchableOpacity>
+            <View style={styles.item}>
+                <Ionicons name="location-outline" size={20} color={Colors.medium} />
+                <Text style={{ flex: 1 }}>Current location</Text>
+                <Ionicons name="chevron-forward" size={20} color={Colors.primary} />
+            </View>
+            </TouchableOpacity>
+        </Link>
 
         <Text style={styles.subheader}>Arrival time</Text>
         <TouchableOpacity>

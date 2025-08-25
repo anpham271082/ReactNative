@@ -94,7 +94,7 @@ const MovieProfile = () => {
             />
           </Animated.View>
 
-          <Text className="text-white text-2xl font-bold mt-4">John Doe</Text>
+          <Text className="text-white text-2xl font-bold mt-4">An Pham</Text>
           <Text className="text-gray-400 text-base mt-1">Movie Enthusiast 🎬</Text>
         </View>
 

@@ -24,6 +24,7 @@ const buttonList: {
 }[] = [
   { text: "Movie", color: "#2196F3", route: "(movie_tabs)", visible: true },
   { text: "Food", color: "#2196F3", route: "(food)", visible: true },
+  { text: "Drawer Menu", color: "#9C27B0", route: "(drawer-menu)", visible: true },
   { text: "Image Gallery", color: "#9C27B0", route: "ImageGallery", visible: true },
   { text: "Card Flip", color: "#FFC107", route: "CardFlip", visible: true },
   { text: "Fragmented Image", color: "#003088", route: "FragmentedImageScreen", visible: true },

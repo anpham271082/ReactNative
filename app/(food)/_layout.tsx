@@ -70,6 +70,21 @@ export default function FoodLayoutNav() {
             ),
           }}
         />
+        <Stack.Screen
+          name="food-location-search"
+          options={{
+            presentation: 'fullScreenModal',
+            headerTitle: 'Select location',
+            headerLeft: () => (
+              <TouchableOpacity
+                onPress={() => {
+                  router.back();
+                }}>
+                <Ionicons name="close-outline" size={28} color={Colors.primary} />
+              </TouchableOpacity>
+            ),
+          }}
+        />
       </Stack>
   );
 }
